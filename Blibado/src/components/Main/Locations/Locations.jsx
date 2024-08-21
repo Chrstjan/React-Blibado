@@ -12,9 +12,11 @@ export const Locations = ({}) => {
                 {locationsArray.map((location) => {
                 return (
                      <figure key={location.name} className={style.locationStyling}>
-                        <img src={location.img} />
-                        <h3>{location.name}</h3>
+                        <header>
+                            <img src={location.img} />
+                        </header>
                         <figcaption>
+                            <h3>{location.name}</h3>
                             <ul>
                                 <span>
                                     <li><h4>Antal Soveplader:</h4></li>
