@@ -3,6 +3,7 @@
 
 .headerStyling {
     @include m.flexBox(row, flex-start, center);
+    padding: 0.4rem 0rem 0.4rem 1rem;
 
     .blueColor {
         color: v.$light-blue-color;
@@ -29,4 +30,5 @@ h1, h2 {
 
 h2 {
     color: v.$light-blue-color;
+    padding: 0.4rem 0rem 0.4rem 1rem;
 }

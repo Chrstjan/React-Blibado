@@ -1,0 +1,10 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.footerStyling {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-left: 1rem;
+    background: v.$dark-color;
+}

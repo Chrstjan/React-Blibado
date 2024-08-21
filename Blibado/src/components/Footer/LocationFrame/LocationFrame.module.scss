@@ -1,0 +1,10 @@
+@use "../../../styles/variables" as v;
+
+h3 {
+    color: v.$light-blue-color;
+}
+
+.frameStyling {
+    width: 100%;
+    height: 60%;
+}
