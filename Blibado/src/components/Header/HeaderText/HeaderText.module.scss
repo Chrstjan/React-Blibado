@@ -1,0 +1,32 @@
+@use "../../../styles/mixins" as m;
+@use "../../../styles/variables" as v;
+
+.headerStyling {
+    @include m.flexBox(row, flex-start, center);
+
+    .blueColor {
+        color: v.$light-blue-color;
+    }
+
+    .yellowColor {
+        color: v.$orange-color;
+    }
+
+    .redColor {
+        color: v.$red-color;
+    }
+
+    sup {
+        font-size: 1.5rem;
+        color: v.$light-gray-color;
+    }
+
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h2 {
+    color: v.$light-blue-color;
+}

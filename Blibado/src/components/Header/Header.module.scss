@@ -1,0 +1,8 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.headerStyling {
+    @include m.flexBox(column, center, flex-start);
+    padding-left: 1rem;
+    background: v.$light-gray-color;
+}
