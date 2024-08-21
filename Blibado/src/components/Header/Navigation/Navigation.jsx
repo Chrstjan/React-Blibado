@@ -8,7 +8,7 @@ export const Navigation = () => {
                 <li>
                     <a href="#">Om os</a>
                 </li>
-                <li>
+                <li> 
                     <a href="#">Locations</a>
                 </li>
                 <li>

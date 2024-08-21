@@ -11,15 +11,17 @@ export const About = ({videoSrc}) => {
                 <video autoPlay loop muted>
                     <source src={videoSrc} type="video/mp4"/>
                 </video>
-                <header>
+                <span className={style.aboutUsStyling}>
+                 <header>
                     <h4>Begyndelsen</h4>
-                </header>
-                <p>BliBaDO begyndte i 2018 da to udviklere var værter for tre rejsende, der ledte efter et sted at bo. Nu har millioner af værter og gæster oprettet en gratis BliBaDo-konto.</p>
-                <p>Uanset om det er en forretningsrejse, weekendtur, familieferie, eller et længere ophold, er der millioner af fantastiske steder at besøge.</p>
-                <p>Vi arbejder med: Bekræftede personlige profiler samt en pålidelig platform til at opkræve og overføre betalinger.</p>
-                <footer>
+                 </header>
+                 <p>BliBaDO begyndte i 2018 da to udviklere var værter for tre rejsende, der ledte efter et sted at bo. Nu har millioner af værter og gæster oprettet en gratis BliBaDo-konto.</p>
+                 <p>Uanset om det er en forretningsrejse, weekendtur, familieferie, eller et længere ophold, er der millioner af fantastiske steder at besøge.</p>
+                 <p>Vi arbejder med: Bekræftede personlige profiler samt en pålidelig platform til at opkræve og overføre betalinger.</p>
+                 <footer>
                     <a href="#">Læs mere:</a>
-                </footer>
+                 </footer>
+                </span>
             </article>
          </section>
         </>

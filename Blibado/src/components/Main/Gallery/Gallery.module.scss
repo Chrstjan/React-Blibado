@@ -1,10 +1,26 @@
 .galleryStyling {
     img {
         width: 100%;
+
+        @media (min-width: 1300px) {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .imagesGallery {
+        @media (min-width: 1300px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.4rem;
+        }
     }
     .galleryContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
+
+        img {
+            width: 100%;
+        }
     }
 }

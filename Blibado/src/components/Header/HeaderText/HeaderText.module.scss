@@ -5,6 +5,10 @@
     @include m.flexBox(row, flex-start, center);
     padding: 0.4rem 0rem 0.4rem 1rem;
 
+    @media (min-width: 1300px) {
+        font-size: 2.5rem;
+    }
+
     .blueColor {
         color: v.$light-blue-color;
     }
@@ -19,7 +23,11 @@
 
     sup {
         font-size: 1.5rem;
-        color: v.$light-gray-color;
+        color: #958888;
+
+        @media (min-width: 1300px) {
+            font-size: 2.5rem;
+        }
     }
 
 }
@@ -31,4 +39,8 @@ h1, h2 {
 h2 {
     color: v.$light-blue-color;
     padding: 0.4rem 0rem 0.4rem 1rem;
+
+    @media (min-width: 1300px) {
+        font-size: 2.5rem;
+    }
 }

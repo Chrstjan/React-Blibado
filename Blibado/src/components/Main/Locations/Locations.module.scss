@@ -3,32 +3,43 @@
 
 .locationsStyling {
 
-    .locationStyling {
-        img {
-            width: 100%;
-        }
+        .locationContainer {
 
-        h3 {
-            font-size: 1.5rem;
-            font-family: 400;
-            margin: 0;
-        }
+            @media (min-width: 1300px) {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              justify-content: center;
+               
+            }
 
-        figcaption {
-            ul {
-                padding: 0;
-                @include m.flexBox(column, center, flex-start, 1rem);
+            .locationStyling {
+                img {
+                    width: 100%;
+                }
+        
+                h3 {
+                    font-size: 1.5rem;
+                    font-family: 400;
+                    margin: 0;
+                }
 
-                li {
-                    list-style-type: none;
-
-                    h4 {
-                        color: v.$light-blue-color;
-                        margin: 0;
-                        padding-bottom: 0.3rem;
+                figcaption {
+                    ul {
+                        padding: 0;
+                        @include m.flexBox(column, center, flex-start, 1rem);
+        
+                        li {
+                            list-style-type: none;
+        
+                            h4 {
+                                color: v.$light-blue-color;
+                                margin: 0;
+                                padding-bottom: 0.3rem;
+                            }
+                        }
                     }
                 }
-            }
+
         }
     }
 }

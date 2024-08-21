@@ -8,9 +8,10 @@ export const Locations = ({}) => {
                 <header>
                     <h2>Locations</h2>
                 </header>
+                <div className={style.locationContainer}>
                 {locationsArray.map((location) => {
                 return (
-                    <figure key={location.name} className={style.locationStyling}>
+                     <figure key={location.name} className={style.locationStyling}>
                         <img src={location.img} />
                         <h3>{location.name}</h3>
                         <figcaption>
@@ -38,9 +39,10 @@ export const Locations = ({}) => {
                                 </span>
                             </ul>
                         </figcaption>
-                    </figure>    
+                     </figure>    
                 )
                 })}
+                </div>
             </section>
         </>
     )

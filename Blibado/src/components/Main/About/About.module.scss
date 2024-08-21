@@ -4,19 +4,46 @@
 .aboutStyling {
 
     .infoStyling {
+        @media (min-width: 1300px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
         video {
             width: 100%;
-        }
 
-        h4 {
-            color: v.$light-blue-color;
-        }
-
-        footer {
-            text-align: right;
-            a {
-                color: v.$light-blue-color;
+            @media (min-width: 1300px) {
+                width: 100%;
             }
         }
+
+        .aboutUsStyling {
+            h4 {
+                color: v.$light-blue-color;
+
+                @media (min-width: 1300px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            p {
+                @media (min-width: 1300px) {
+                    font-size: 1.2rem;
+                }
+            }
+    
+            footer {
+                text-align: right;
+                @media (min-width: 1300px) {
+                    padding-top: 2rem;
+                    padding-right: 1rem;
+                }
+                a {
+                    color: v.$light-blue-color;
+                }
+            }
+        }
+
     }
 }

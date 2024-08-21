@@ -5,4 +5,8 @@
     @include m.flexBox(column, center, flex-start);
     background: v.$light-gray-color;
     padding: 0rem 0.5rem;
+
+    @media (min-width: 1300px) {
+        align-items: center;
+    }
 }
