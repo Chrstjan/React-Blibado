@@ -1,0 +1,22 @@
+@use "../../../styles/mixins" as m;
+@use "../../../styles/variables" as v;
+
+.aboutStyling {
+
+    .infoStyling {
+        video {
+            width: 100%;
+        }
+
+        h4 {
+            color: v.$light-blue-color;
+        }
+
+        footer {
+            text-align: right;
+            a {
+                color: v.$light-blue-color;
+            }
+        }
+    }
+}

@@ -1,13 +1,16 @@
 @use "../../../styles/mixins" as m;
 @use "../../../styles/variables" as v;
 
-.navigationStyling {
+nav {
     background: v.$dark-color;
-    padding: 0;
-    @include m.flexBox(column, center, flex-start);
     width: 100%;
-    margin: 0;
     padding: 0.4rem 0rem 0.4rem 1rem;
+}
+
+.navigationStyling {
+    padding: 0;
+    margin: 0;
+    @include m.flexBox(column, center, flex-start);
 
     li {
         list-style: none;

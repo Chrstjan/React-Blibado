@@ -3,7 +3,8 @@ import style from "./Navigation.module.scss"
 export const Navigation = () => {
     return (
         <>
-            <ul className={style.navigationStyling}>
+            <nav>
+             <ul className={style.navigationStyling}>
                 <li>
                     <a href="#">Om os</a>
                 </li>
@@ -16,7 +17,8 @@ export const Navigation = () => {
                 <li>
                     <a href="#">SignUp</a>
                 </li>
-            </ul>
+             </ul>
+            </nav>
         </>
     )
 }
