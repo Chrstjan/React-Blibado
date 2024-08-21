@@ -38,7 +38,11 @@ nav {
 
     li {
         list-style: none;
-        
+        &:last-child {
+            a {
+                color: v.$light-blue-color;
+            }
+        }
 
         a {
             text-decoration: none;
