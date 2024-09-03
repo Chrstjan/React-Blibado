@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import { MainLayout } from "./layouts/MainLayout";
 import { LandingPage } from "./pages/LandingPage";
 import { LocationsPage } from "./pages/LocationsPage";
 import { GalleryPage } from "./pages/GalleryPage";
-import { MainLayout } from "./layouts/MainLayout";
 import './App.scss'
 
 function App() {
