@@ -7,16 +7,16 @@ export const Navigation = () => {
             <nav>
              <ul className={style.navigationStyling}>
                 <li>
-                    <NavLink to={"/"}>Hjem</NavLink>
+                    <NavLink style={({isActive}) => isActive ? {color: 'red'} : {color: "white"}} to={"/"}>Hjem</NavLink>
                 </li>
                 <li>
-                    <NavLink to={"/locations"}>Locations</NavLink>
+                    <NavLink style={({isActive}) => isActive ? {color: 'red'} : {color: "white"}} to={"/locations"}>Locations</NavLink>
                 </li>
                 <li> 
-                <NavLink to={"/about"}>Om Os</NavLink>
+                    <NavLink style={({isActive}) => isActive ? {color: 'red'} : {color: "white"}} to={"/about"}>Om Os</NavLink>
                 </li>
                 <li>
-                <NavLink to={"/aktuelt"}>aktuelt</NavLink>
+                    <NavLink style={({isActive}) => isActive ? {color: 'red'} : {color: "white"}} to={"/aktuelt"}>Aktuelt</NavLink>
                 </li>
                 <li>
                     <a href="#">SignUp</a>
