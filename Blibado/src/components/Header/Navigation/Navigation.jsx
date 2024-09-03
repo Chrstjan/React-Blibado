@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import style from "./Navigation.module.scss"
 
 export const Navigation = () => {
@@ -6,13 +7,16 @@ export const Navigation = () => {
             <nav>
              <ul className={style.navigationStyling}>
                 <li>
-                    <a href="#">Om os</a>
-                </li>
-                <li> 
-                    <a href="#">Locations</a>
+                    <NavLink to={"/"}>Hjem</NavLink>
                 </li>
                 <li>
-                    <a href="#">Aktuelt</a>
+                    <NavLink to={"/locations"}>Locations</NavLink>
+                </li>
+                <li> 
+                <NavLink to={"/about"}>Om Os</NavLink>
+                </li>
+                <li>
+                <NavLink to={"/aktuelt"}>aktuelt</NavLink>
                 </li>
                 <li>
                     <a href="#">SignUp</a>

@@ -16,10 +16,10 @@ export const Gallery = () => {
                 <div className={style.imagesGallery}>
                     <img src={thumbnail} />
                     <figure className={style.galleryContainer}>
-                        <img src="/src/assets/images/Location-06-01.jpg" onClick={handleThumbnail} />
-                        <img src="/src/assets/images/Location-06-02.jpg" onClick={handleThumbnail} />
-                        <img src="/src/assets/images/Location-06-03.jpg" onClick={handleThumbnail} />
-                        <img src="/src/assets/images/Location-06-04.jpg" onClick={handleThumbnail} />
+                        <img src="./src/assets/images/Location-06-01.jpg" onClick={handleThumbnail} />
+                        <img src="./src/assets/images/Location-06-02.jpg" onClick={handleThumbnail} />
+                        <img src="./src/assets/images/Location-06-03.jpg" onClick={handleThumbnail} />
+                        <img src="./src/assets/images/Location-06-04.jpg" onClick={handleThumbnail} />
                     </figure>
                 </div>
             </section>
