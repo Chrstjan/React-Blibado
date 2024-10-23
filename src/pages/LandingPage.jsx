@@ -15,7 +15,7 @@ export const LandingPage = () => {
             <meta property="og:url" content="" />
             </Helmet>
             
-            <About videoSrc={"./src/assets/pexels-taryn-elliott-9583751 (720p).mp4"}/>
+            <About videoSrc={"./pexels-taryn-elliott-9583751 (720p).mp4"}/>
         </>
     )
 }
