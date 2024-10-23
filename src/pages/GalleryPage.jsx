@@ -12,7 +12,7 @@ export const GalleryPage = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Galleri - Blibado" />
                 <meta property="og:description" content="Blibados galleri side" />
-                <meta property="og:url" content="" />
+                <meta property="og:url" content="https://react-blibado.netlify.app/aktuelt" />
             </Helmet>
             <Gallery />
         </>

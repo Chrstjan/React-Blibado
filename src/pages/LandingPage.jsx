@@ -12,7 +12,7 @@ export const LandingPage = () => {
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Forside - Blibado" />
             <meta property="og:description" content="Blibados  forside" />
-            <meta property="og:url" content="" />
+            <meta property="og:url" content="https://react-blibado.netlify.app/" />
             </Helmet>
             
             <About videoSrc={"./pexels-taryn-elliott-9583751 (720p).mp4"}/>

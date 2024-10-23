@@ -13,7 +13,7 @@ export const LocationsPage = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Locations - Blibado" />
                 <meta property="og:description" content="Blibados Locations side" />
-                <meta property="og:url" content="" />    
+                <meta property="og:url" content="https://react-blibado.netlify.app/locations" />    
             </Helmet>
 
             <Locations />

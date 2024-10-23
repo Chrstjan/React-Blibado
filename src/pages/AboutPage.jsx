@@ -13,7 +13,7 @@ export const AboutPage = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="About - Blibado" />
                 <meta property="og:description" content="Blibados kontakt side" />
-                <meta property="og:url" content="" />
+                <meta property="og:url" content="https://react-blibado.netlify.app/about" />
             </Helmet>
             
             <Footer>
