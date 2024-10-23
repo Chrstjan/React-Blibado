@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 
 import { MainLayout } from "./layouts/MainLayout";
 import { LandingPage } from "./pages/LandingPage";
@@ -10,8 +11,11 @@ import { MissingPage } from "./pages/MissingPage";
 
 function App() {
 
+  const helmetContext = {};
+  
   return (
     <>
+    <HelmetProvider context={helmetContext}>
     <Router>
       <Routes>
         <Route path={"/"} element={<MainLayout />}>
@@ -22,7 +26,8 @@ function App() {
           <Route path={"/*"} element={<MissingPage />}></Route>
         </Route>
       </Routes>
-    </Router>
+      </Router>
+    </HelmetProvider>
     </>
   )
 }
