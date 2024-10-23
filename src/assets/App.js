@@ -1,6 +1,6 @@
 export const locationsArray = [
     {
-        img: "./src/assets/images/Location-01-01.jpg",
+        img: "./Location-01-01.jpg",
         name: "Location One",
         adults: "2",
         children: "3",
@@ -10,7 +10,7 @@ export const locationsArray = [
         description: "Lejligheden ligger i en gammel bygning med højt til loftet, masser af lys og en balkon, der vender lige mod syd, så du kan nyde solopgangen og solnedgangen med udsigt over havet og den lille havn.",
     },
     {
-        img: "./src/assets/images/Location-02-01.jpg",
+        img: "./Location-02-01.jpg",
         name: "Location Two",
         adults: "4",
         children: "4",
@@ -20,7 +20,7 @@ export const locationsArray = [
         description: "Nyd udsigten fra den store balkon i en klassisk møbleret lejlighed. Du har adgang til: En entre med et toilet (mulighed for bruser), to store værelser eget badeværelse, godt køkken og to soveværelser.",
     },
     {
-        img: "./src/assets/images/Location-03-01.jpg",
+        img: "./Location-03-01.jpg",
         name: "Location Three",
         adults: "3",
         children: "4",
@@ -30,7 +30,7 @@ export const locationsArray = [
         description: "62 kv/m lejlighed med en fantastisk udsigt og privat parkeringsplads mod et ekstra gebyr. Ti minutters gang til en shoppingmole Fisketorvet. Nyd solrige aftener på en balkon med en kold drink.",
     },
     {
-        img: "./src/assets/images/Location-04-01.jpg",
+        img: "./Location-04-01.jpg",
         name: "Location Four",
         adults: "2",
         children: "3",
@@ -40,7 +40,7 @@ export const locationsArray = [
         description: "Bygning med højt til loftet, masser af lys og sydvendt balkon, så du kan nyde udsigten over den idylliske havn. Køkken og spisestue er veludrustet og forbundet med en dobbeltdør.",
     },
     {
-        img: "./src/assets/images/Location-05-01.jpg",
+        img: "./Location-05-01.jpg",
         name: "Location Five",
         adults: "2",
         children: "4",
@@ -50,7 +50,7 @@ export const locationsArray = [
         description: "Nyd udsigten over København fra den store balkon og slappe af i en rummelig klassisk møbleret lejlighed. Du har adgang til: En entre med et toilet, to store værelser, godt køkken og to soveværelser.",
     },
     {
-        img: "./src/assets/images/Location-06-01.jpg",
+        img: "./Location-06-01.jpg",
         name: "Location Six",
         adults: "2",
         children: "4",
