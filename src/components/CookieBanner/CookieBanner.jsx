@@ -8,7 +8,7 @@ export const CookieBanner = () => {
 
     if (withAnalytics === true) {
       //Initialize google analytics with GTag ID
-      ReactGA.initialize('G-4DYZV1LRJ8');
+      ReactGA.initialize('G-ZP5MEZ7QDT'); //G-4DYZV1LRJ8
     }
 
     const enableGa = () => {
