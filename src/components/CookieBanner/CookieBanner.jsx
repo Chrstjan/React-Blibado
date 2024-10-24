@@ -1,39 +1,33 @@
 import { useEffect, useState } from "react";
-import ReactGA from "react-ga4";
+import reactGA from "react-ga4";
 import style from "./CookieBanner.module.scss"
 
 export const CookieBanner = () => {
     const [withAnalytics, setWithAnalytics] = useState(false);
-    const [hasUserCookie, setHasUserCookie] = useState(null);
+    const [hasUserCookie, setHasUserCookie] = useState();
 
     if (withAnalytics === true) {
       //Initialize google analytics with GTag ID
-      ReactGA.initialize('G-ZP5MEZ7QDT'); //G-4DYZV1LRJ8
+      reactGA.initialize("G-ZP5MEZ7QDT"); //G-4DYZV1LRJ8
     }
 
     const enableGa = () => {
         setWithAnalytics(true);
-        localStorage.setItem('userAccept', 'true');
-        setHasUserCookie('true');
+        setHasUserCookie(true);
+        localStorage.setItem('userAccept', true);
     }
 
     const disableGa = () => {
         setWithAnalytics(false);
-        localStorage.setItem('userAccept', 'false');
-        setHasUserCookie('false'); // Update the user cookie state
+        setHasUserCookie(false);
+        localStorage.setItem('userAccept', false);
     }
 
-    useEffect(() => {
-        const hasUserAccepted = localStorage.getItem("userAccept");
-        setHasUserCookie(hasUserAccepted);
-        if (hasUserAccepted === 'true') {
-            setWithAnalytics(true); // Enable GA if the user accepted cookies previously
-        }
-    }, []);
+    const hasUserAccepted = localStorage.getItem("userAccept");
+
 
     return (
-        <>
-            {!hasUserCookie && (
+            !hasUserCookie && hasUserAccepted === null && (
                 <div className={style.cookieBanner}>
                     <section>
                         <p>This site uses cookies for tracking purposes</p>
@@ -43,7 +37,6 @@ export const CookieBanner = () => {
                         <button onClick={enableGa}>Accept</button>
                     </section>
                 </div>
-            )}
-        </>
+            )
     );
 }
