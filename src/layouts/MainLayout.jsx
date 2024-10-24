@@ -1,3 +1,4 @@
+import { CookieBanner } from "../components/CookieBanner/CookieBanner";
 import { Header } from "../components/Header/Header";
 import { HeaderText } from "../components/Header/HeaderText/HeaderText";
 import { Navigation } from "../components/Header/Navigation/Navigation";
@@ -13,6 +14,7 @@ export const MainLayout = () => {
           <Navigation />
          </Header>
          <Main>
+          <CookieBanner />
           <Outlet />
          </Main>
         </>
